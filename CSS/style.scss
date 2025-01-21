@@ -1,0 +1,184 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: "Outfit", serif !important;
+}
+
+p{
+    font-family: "Rubik", serif !important;
+}
+
+li{
+    font-family: "Rubik", serif !important;
+}
+
+a{
+    font-family: "Montserrat", serif !important;
+}
+
+nav{
+    .nav-link{
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    button{
+        background-color: #CD6C03;
+        padding: 5px 10px;
+        border: none;
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+}
+
+.about{
+    padding: 50px 0px;
+    h1{
+        font-size: 42px;
+        font-weight: 500;
+        font-style: normal;
+    }
+    button{
+        background-color: #CD6C03;
+        padding: 5px 20px;
+        border: none;
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+}
+
+.amenities{
+    padding: 50px 0px;
+    background: #FED7AE;
+    .col-box{
+        background-color: #fff;
+        padding: 30px 20px;
+    }
+}
+
+.floor-plan{
+    padding: 40px 0px;
+    .col-box{
+        padding-bottom: 20px;
+        background-color: rgb(230, 228, 228);
+    }
+    button{
+        background-color: #CD6C03;
+        padding: 5px 10px;
+        border: none;
+        a{
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
+
+.gallery{
+    padding: 50px 0px;
+    background-color: #FED7AE;
+    h2{
+        font-weight: 600;
+        text-align: center;
+    }
+}
+
+.location{
+    h3{
+        color: #CD6C03;
+        font-weight: 600;
+    }
+}
+
+.testimonials{
+    background-color: #FED7AE;
+    padding: 50px 0px;
+    .swiper-slide{
+        height: 100%;
+        padding: 10px;
+        text-align: center;
+
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+}
+
+.form-cover{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),url(../Images/Banner_contact.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0px;
+    h6{
+        color: #CD6C03;
+        font-weight: 700;
+    }
+    h2{
+        color: #fff;
+        font-weight: 500;
+    }
+    p{
+        color: #fff;
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+    .form-box{
+        background-color: #fff;
+        padding: 40px 10px;
+        input{
+            border: 1px solid #000;
+            width: 100%;
+            padding: 10px;
+            font-family: "Rubik", serif !important;
+        }
+        textarea{
+            width: 100%;
+            padding: 10px;
+            font-family: "Rubik", serif !important;
+        }
+        button{
+            background-color: #CD6C03;
+            padding: 10px 30px;
+            border: none;
+            color: #fff;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.call-btn{
+    display: none;
+    @media (max-width:991px) {
+        position: fixed;
+        z-index: 99999;
+        display: block;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+    }
+    button{
+        background-color: #CD6C03;
+        padding: 8px 5px;
+        width: 100%;
+        border: 1px solid #fff;
+        color: #fff;
+    }
+}
