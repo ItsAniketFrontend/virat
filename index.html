@@ -31,25 +31,25 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 gap-3 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Amenities</a>
+                            <a class="nav-link" href="#amenities">Amenities</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Price</a>
+                            <a class="nav-link" href="#floor-plan">Price</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Gallery</a>
+                            <a class="nav-link" href="#gallery">Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Location</a>
+                            <a class="nav-link" href="#location">Location</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Us</a>
+                            <a class="nav-link" onclick="toggleForm()">Contact Us</a>
                         </li>
                     </ul>
                 </div>
@@ -63,14 +63,14 @@
     <main>
 
         <!-- banner -->
-        <section class="banner">
+        <section class="banner" id="home">
             <div class="container-fluid px-0">
                 <img src="Images/virat-banner.jpg" width="100%" height="auto" class="d-none d-sm-none d-md-block d-lg-block" alt="">
                 <img src="Images/mobile-banner.jpg" width="100%" height="auto" class="d-block d-sm-block d-md-none d-lg-none d-xl-none" alt="">
             </div>
         </section>
 
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
@@ -83,7 +83,7 @@
                             <li>Reserved Car Parking For Each Flat</li>
                             <li>High tech & Ultra-Modern Clubhouse.</li>
                         </ul>
-                        <button><a href="">Know More</a></button>
+                        <button onclick="toggleForm()">Know More</button>
                     </div>
                     <div class="col-lg-6">
                         <img src="Images/virat-about-2.jpg" class="img-fluid" alt="">
@@ -92,7 +92,7 @@
             </div>
         </section>
 
-        <section class="amenities">
+        <section class="amenities" id="amenities">
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center">
@@ -152,7 +152,7 @@
             </div>
         </section>
 
-        <section class="floor-plan">
+        <section class="floor-plan" id="floor-plan">
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center">
@@ -162,35 +162,35 @@
                         <div class="col-box text-center">
                             <img src="Images/2bhk.jpg" width="100%" height="209px" style="object-fit: cover;" alt="">
                             <h5>2BHK</h5>
-                            <button><a href="">Price Breakup</a></button>
+                            <button onclick="toggleForm()">Price Breakup</button>
                         </div>
                     </div>
                     <div class="col-lg-3 my-3">
                         <div class="col-box text-center">
                             <img src="Images/3bhk.jpg" width="100%" height="209px" style="object-fit: cover;" alt="">
                             <h5>3BHK</h5>
-                            <button><a href="">Price Breakup</a></button>
+                            <button onclick="toggleForm()">Price Breakup</button>
                         </div>
                     </div>
                     <div class="col-lg-3 my-3">
                         <div class="col-box text-center">
                             <img src="Images/3bhk.jpg" width="100%" height="209px" style="object-fit: cover;" alt="">
                             <h5>4BHK</h5>
-                            <button><a href="">Price Breakup</a></button>
+                            <button onclick="toggleForm()">Price Breakup</button>
                         </div>
                     </div>
                     <div class="col-lg-3 my-3">
                         <div class="col-box text-center">
                            <img src="Images/duplex.jpg" width="100%" height="209px" style="object-fit: cover;" alt=""> 
                            <h5>Duplex</h5>
-                           <button><a href="">Price Breakup</a></button>
+                           <button onclick="toggleForm()">Price Breakup</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="gallery">
+        <section class="gallery" id="gallery">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -240,7 +240,7 @@
             </div>
         </section>
 
-        <section class="location py-5">
+        <section class="location py-5" id="location">
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center">
@@ -267,7 +267,7 @@
             </div>
         </section>
 
-        <section class="testimonials">
+        <section class="testimonials" id="testimonials">
             <div class="container">
                 <!-- Swiper -->
                 <div class="swiper mySwiper">
@@ -307,7 +307,7 @@
 
                     </div>
                     <div class="col-lg-6">
-                        <div class="form-box">
+                        <div class="form-box" id="contact">
                             <h3>Fill Out Details</h3>
                             <form action="">
                                 <div class="col-12 mb-1">
@@ -335,13 +335,66 @@
         <div class="call-btn">
             <div class="row">
                 <div class="col-6 px-0">
-                    <button>Call Now</button>
+                    <button><a href="tel:+91-9314611511">Call Now</a></button>
                 </div>
                 <div class="col-6 px-0">
-                    <button>Site Visit</button>
+                    <button onclick="toggleForm()">Site Visit</button>
                 </div>
             </div>
         </div>
+
+        <div class="container popup_form">
+            <div class="overlay" id="overlay"></div>
+        
+            <!-- Form Container -->
+            <div class="form-container" id="formContainer">
+              <span class="close-btn btn btn-danger" onclick="toggleForm()">X</span>
+              <h5 class="text-center mt-4 mb-4 ">Please fill up the below details</h5>
+              <form id="logs" method="post">
+                <div id="table-data"></div>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control txtNumeric" id="name" name="name" placeholder="Enter your name"
+                    required>
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <input type="text" class="form-control numbersOnly" id="phone" minlength="10" maxlength="10" name="phone"
+                    placeholder="Enter your phone number" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" name="message" rows="3"
+                    placeholder="Enter your message"></textarea>
+                </div>
+                <div class="text-center mb-3">
+                  <button type="submit" id="btnsubmits" class="btn btn-warning w-50">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <script>
+            // Function to toggle form visibility
+            function toggleForm() {
+              var overlay = document.getElementById('overlay');
+              var formContainer = document.getElementById('formContainer');
+              if (overlay.style.display === 'none' || overlay.style.display === '') {
+                overlay.style.display = 'block';
+                formContainer.style.display = 'block';
+              } else {
+                overlay.style.display = 'none';
+                formContainer.style.display = 'none';
+              }
+            }
+          </script>
+          <script>
+            setTimeout(toggleForm, 3000);
+          </script>
+
 
     </main>
 

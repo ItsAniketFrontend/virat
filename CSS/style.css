@@ -51,6 +51,7 @@ nav button a {
   background-color: #CD6C03;
   padding: 5px 20px;
   border: none;
+  color: #fff;
 }
 .about button a {
   text-decoration: none;
@@ -77,6 +78,7 @@ nav button a {
   background-color: #CD6C03;
   padding: 5px 10px;
   border: none;
+  color: #fff;
 }
 .floor-plan button a {
   color: #fff;
@@ -178,4 +180,109 @@ nav button a {
   width: 100%;
   border: 1px solid #fff;
   color: #fff;
+}
+.call-btn button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 999999;
+}
+
+.form-container {
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  width: 40%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  background-position: center;
+  background-size: cover;
+  padding: 20px 120px;
+  border-radius: 5px;
+  display: none;
+  z-index: 999999;
+}
+
+.form-container button:hover {
+  background-color: white;
+  color: black;
+}
+
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+.popup_form .cross {
+  background-color: #19382B;
+  color: #fff;
+}
+.popup_form .cross:hover {
+  background-color: #19382B;
+  color: #fff;
+}
+
+.popup_form label {
+  color: #000;
+  font-family: "Futura Md BT";
+  font-size: 18px;
+}
+
+.popup_form input {
+  font-family: "Futura Md BT";
+  font-size: 14px;
+  color: #53626a;
+}
+
+.popup_form textarea {
+  font-family: "Futura Md BT";
+  font-size: 14px;
+  color: #53626a;
+}
+
+.popup_form h5 {
+  color: #000;
+  font-family: "Futura Md BT";
+  font-size: 24px;
+}
+
+.popup_form h6 {
+  color: #000;
+  font-family: avalon-bold;
+  font-size: 15px;
+  text-align: center;
+}
+
+.popup_form button {
+  background-color: #CD6C03;
+  color: #fff;
+  font-family: "Futura Md BT";
+  font-weight: 500;
+}
+.popup_form button:hover {
+  border: 1px solid #CD6C03;
+}
+
+@media (max-width: 576px) {
+  .form-container {
+    top: 50%;
+    width: 100%;
+    padding: 50px 60px;
+  }
+  .btn_brochure {
+    background-color: #1e1916;
+    padding: 5px 0 20px 0;
+    margin-top: -5px;
+  }
 }/*# sourceMappingURL=style.css.map */
