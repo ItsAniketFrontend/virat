@@ -121,10 +121,11 @@ nav{
 }
 
 .form-cover{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),url(../Images/Banner_contact.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    // background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),url(../Images/Banner_contact.jpg);
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    background: #000;
     padding: 50px 0px;
     h6{
         color: #CD6C03;
@@ -142,12 +143,17 @@ nav{
         }
     }
     .form-box{
-        background-color: #fff;
+        background-color: #CD6C03;
         padding: 40px 10px;
+        border-radius: 40px;
+        h3{
+            color: #fff;
+        }
         input{
             border: 1px solid #000;
             width: 100%;
             padding: 10px;
+            border-radius: 10px;
             font-family: "Rubik", serif !important;
         }
         textarea{
@@ -206,7 +212,7 @@ nav{
     left: 50%;
     width: 40%;
     transform: translate(-50%, -50%);
-    background-color: #fff;
+    background-color: #CD6C03;
     background-position: center;
     background-size: cover;
     padding: 20px 120px;
@@ -239,7 +245,7 @@ nav{
 }
 
 .popup_form label {
-    color: #000;
+    color: #fff;
     font-family: "Futura Md BT";
     font-size: 18px;
 }
@@ -257,24 +263,24 @@ nav{
 }
 
 .popup_form h5 {
-    color: #000;
+    color: #fff;
     font-family: "Futura Md BT";
     font-size: 24px;
 }
 
 .popup_form h6 {
-    color: #000;
+    color: #fff;
     font-family: avalon-bold;
     font-size: 15px;
     text-align: center;
 }
 
 .popup_form button {
-    background-color: #CD6C03;
-    color: #fff;
+    background-color: #fff;
+    color: #CD6C03;
     font-family: "Futura Md BT";
-    font-weight: 500;
-
+    font-weight: 700;
+    text-transform: uppercase;
     &:hover {
         border: 1px solid #CD6C03;
     }
@@ -284,7 +290,7 @@ nav{
     .form-container {
         top: 50%;
         width: 100%;
-        padding: 50px 60px;
+        padding: 30px 40px;
     }
 
     .btn_brochure {
